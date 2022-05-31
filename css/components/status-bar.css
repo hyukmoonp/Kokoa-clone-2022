@@ -4,7 +4,7 @@
   padding: 5px 3px;
 }
 .status-bar_column:first-child span {
-  margin-right: 2px;
+  margin-left: 5px;
 }
 .status-bar_column .fa-wifi {
   margin: 0px 2px;

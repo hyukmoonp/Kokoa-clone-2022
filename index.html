@@ -29,11 +29,16 @@
       </p>
     </header>
 
-    <form class="welcome-login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="text" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <input type="submit" value="Sign Up" />
+    <form action="friends.html" method="GET" class="welcome-login-form">
+      <input
+        name="username"
+        required
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input name="password" required type="password" placeholder="Password" />
+      <input class="welcome-login-button" type="submit" value="Log In" />
+      <input class="welcome-sign-up-button" type="submit" value="Sign Up" />
       <a href="#">Find KokoaTalk Account or Password</a>
     </form>
     <script
