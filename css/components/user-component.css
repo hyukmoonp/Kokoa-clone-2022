@@ -1,14 +1,23 @@
 .user-component {
   justify-content: space-between;
+  transition: 0.1s ease-in-out;
 }
-
+.user-component:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
 .user-component,
 .user-component_column:first-child {
   display: flex;
   align-items: center;
   position: relative;
 }
-
+.user-component_column:last-child {
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
 .user-component_avatar {
   width: 70px;
   height: 70px;
@@ -32,12 +41,17 @@
   border-radius: 25px;
   margin-right: 17px;
 }
+.user-component_suggestions {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
 .user-component_title--not-bold {
   font-weight: 400;
 }
-.user-component_column:last-child {
-  color: rgba(0, 0, 0, 0.4);
-}
+
 .user-component_title {
   font-weight: 600;
   font-size: 22px;
@@ -56,7 +70,11 @@
   margin-bottom: 10px;
   display: block;
 }
-.user-component_chat-notification {
-  position: absolute;
-  right: 2px;
+.user-component_subtitle i {
+  color: red;
+  border: 1.3px solid red;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
 }

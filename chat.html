@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="En">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kokoatalk-Chat w/ Peter</title>
+  </head>
+
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar_column">
+        <span>19:45</span>
+        <i class="fa-solid fa-location-arrow"></i>
+      </div>
+      <div class="status-bar_column"></div>
+      <div class="status-bar_column">
+        <i class="fas fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header_column">
+        <a href="chats.html">
+          <i class="fa-solid fa-angle-left fa-lg"></i>
+        </a>
+      </div>
+      <div class="alt-header_column">
+        <h1 class="alt-header_title">🐶</h1>
+      </div>
+
+      <div class="alt-header_column">
+        <a href="find.html">
+          <span><i class="fas fa-search fa-lg"></i></span>
+        </a>
+        <span><i class="fa-solid fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="main-chat_timestamp">Tuesday, June 07, 2022</div>
+
+      <div class="message-row">
+        <img
+          src="https://img.freepik.com/free-vector/happy-pomeranian-dog-character-hand-drawn-cartoon-art-illustration_56104-769.jpg?w=2000"
+        />
+        <div class="message-row_content">
+          <span class="message_sender">🐶</span>
+          <div class="message_info">
+            <span class="message_bubble"
+              >I sent you my new music playlist! check it out!</span
+            >
+            <span class="message_time">19:22</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row_content">
+          <div class="message_info">
+            <span class="message_bubble">Okay! Thank you!</span>
+            <span class="message_time">19:45</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply" action="">
+      <div class="reply_column">
+        <i class="fa-regular fa-square-plus fa-2x"></i>
+      </div>
+      <div class="reply_column">
+        <input type="text" placeholder="Write a Message..." />
+        <i class="fa-regular fa-face-grin fa-lg"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+    <div id="no-mobile">
+      <span>Your Screen is too big!</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/5e0240002e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

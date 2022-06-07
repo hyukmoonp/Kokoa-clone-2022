@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Kokoatalk-chats page</title>
+    <title>Kokoatalk-find page</title>
   </head>
   <body>
     <div class="status-bar">
@@ -22,30 +22,94 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header_title">Chats</h1>
+      <h1 class="screen-header_title">Find</h1>
       <div class="screen-header_icons">
-        <span> <i class="fa fa-search fa-lg"></i></span>
-        <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <a href="find.html"><span> <i class="fa fa-search fa-lg"></i></span></a>
+        <span
+          ><a href="settings.html"
+            ><div class="screen-header_icons-dot"></div>
+            <i class="fas fa-cog fa-lg"></i></a
+        ></span>
       </div>
     </header>
 
     <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component">
-          <img src="img/user1.jpeg" class="user-component_avatar" />
-          <div class="user-component_text">
-            <h4 class="user-component_title">🐶</h4>
-            <h6 class="user-component_subtitle">
-              I sent you my new music playlist! check it out!
-            </h6>
+      <div class="icon-row">
+        <div class="icon-row_icon">
+          <i class="fa-solid fa-qrcode fa-2x"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="icon-row_icon">
+          <i class="fa-regular fa-address-book fa-2x"></i>
+          <span>Add by<br />Contacts</span>
+        </div>
+        <div class="icon-row_icon">
+          <i class="fa-solid fa-fingerprint fa-2x"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="icon-row_icon">
+          <i class="fa-regular fa-envelope fa-2x"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends_title">Recommended Friends</h6>
+        <span>You have no recommneded friends.</span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat_header">
+          <h4>Open Chat</h4>
+          <span
+            >Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i
+          ></span>
+        </div>
+        <div class="open-post">
+          <div class="open-post_column">
+            <h5 class="open-post_title">#BTS</h5>
+            <h6 class="open-post_hashtag">#bts#army#friends</h6>
+            <div class="open-post_members">
+              <img
+                src="https://m.media-amazon.com/images/I/31BmabzvV6L._SY450_.jpg"
+              />
+              <span class="open-post_members-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post_members-status">Active</span>
+            </div>
           </div>
-          <div class="user-component_column">
-            <span class="user-component_time">19:22</span>
-            <div class="badge">1</div>
+          <div class="open-post_column">
+            <div class="open-post_photo">
+              <img
+                src="https://m.media-amazon.com/images/I/31BmabzvV6L._SY450_.jpg"
+              />
+              <div class="open-post_heart-count">
+                <i class="fa-regular fa-heart fa-sm"></i><span>402</span>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="open-post open-post-last">
+            <div class="open-post_column">
+              <h5 class="open-post_title">#PHS</h5>
+              <h6 class="open-post_hashtag">#phs#soultree</h6>
+              <div class="open-post_members">
+                <img
+                  src="https://ww.namu.la/s/017eb605a07b1e1e8b5600277cc5c368e3d56146e5aade4bb21b8a86fae1fabcb46ca6a69f5cfa5f4eaa414d66c445bb2aec22156094f208b0a3452baceb2a895c5b77186fc1c21f8cba0a80c602d283"
+                />
+                <span class="open-post_members-count">663 members</span>
+                <div class="divider"></div>
+                <span class="open-post_members-status">Active</span>
+              </div>
+            </div>
+            <div class="open-post_column">
+              <div class="open-post_photo">
+                <img
+                  src="https://ww.namu.la/s/017eb605a07b1e1e8b5600277cc5c368e3d56146e5aade4bb21b8a86fae1fabcb46ca6a69f5cfa5f4eaa414d66c445bb2aec22156094f208b0a3452baceb2a895c5b77186fc1c21f8cba0a80c602d283"
+                />
+                <div class="open-post_heart-count">
+                  <i class="fa-regular fa-heart fa-sm"></i><span>312</span>
+                </div>
+              </div>
+            </div>
       </div>
     </main>
 
@@ -59,7 +123,7 @@
         <li class="nav_btn">
           <a class="nav_link" href="chats.html">
             <span class="nav_notification badge">1</span>
-            <i class="fa-solid fa-comment fa-2x"></i
+            <i class="fa-regular fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav_btn">
@@ -75,6 +139,9 @@
         </li>
       </ul>
     </nav>
+    <div id="no-mobile">
+      <span>Your Screen is too big!</span>
+    </div>
     <script
       src="https://kit.fontawesome.com/5e0240002e.js"
       crossorigin="anonymous"
